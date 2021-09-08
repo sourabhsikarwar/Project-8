@@ -52,15 +52,15 @@
 
         <ul>
             <label for="list" class="list-label">Try a pre-built swatch!</label>
-            <li><button class="btn-hover shadow-sm color-1" data-color-main="#6800c7"
+            <li><button class="btn-hover shadow-sm color-1" id="colors" data-color-main="#6800c7"
                     data-color-primary="#0d6efd">Default</button></li>
-            <li><button class="btn-hover shadow-sm color-2" data-color-main="#0051ff"
-                    data-color-primary="#1da1f5">Sky</button></li>
-            <li><button class="btn-hover shadow-sm color-3" data-color-main="#e44800"
+            <li><button class="btn-hover shadow-sm color-2" id="colors" data-color-main="#1da1f5"
+                    data-color-primary="#0051ff">Sky</button></li>
+            <li><button class="btn-hover shadow-sm color-3" id="colors" data-color-main="#ff641c"
                     data-color-primary="#f53b57">sunset</button></li>
-            <li><button class="btn-hover shadow-sm color-4" data-color-main="#07815a"
+            <li><button class="btn-hover shadow-sm color-4" id="colors" data-color-main="#0a7955"
                     data-color-primary="#06794f">Seafoam</button></li>
-            <li><button class="btn-hover shadow-sm color-5" data-color-main="#d63384"
+            <li><button class="btn-hover shadow-sm color-5" id="colors" data-color-main="#fa70b5"
                     data-color-primary="#b5015a">Bubble</button></li>
         </ul>
 
@@ -487,7 +487,7 @@
     -->
 
     <script>
-        const themebutton = document.querySelectorAll("button.btn-hover");
+        const themebutton = document.querySelectorAll("button#colors");
 
         for (let i = 0; i < themebutton.length; i++) {
 
