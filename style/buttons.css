@@ -1,0 +1,77 @@
+/* buttons */
+
+.buttons {
+    text-align: center;
+}
+
+.btn-hover {
+    width: 220px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: .3rem auto;
+    height: 52px;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 6px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+/* button 1 */
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right,  #00b7ff,  #6800c7,  #6800c7, #00b7ff);
+}
+
+/* button 2 */
+
+.btn-hover.color-2 {
+    background-image: linear-gradient(to right, #00b7ff, #0051ff, #0051ff, #00b7ff);
+}
+
+/* button 3 */
+
+.btn-hover.color-3 {
+    background-image: linear-gradient(to right, #ff9f44, #e44800, #e44800, #ff9f44);
+}
+
+/* button 4 */
+
+.btn-hover.color-4 {
+    background-image: linear-gradient(to right, #13b398, #07815a, #07815a,#13b398);
+}
+
+/* button 5 */
+
+.btn-hover.color-5 {
+    background-image: linear-gradient(to right, #fa70b5, #d63384, #d63384,#fa70b5);
+}
+
+/* button normal 1 */
+
+.btn-hover.color-n1 {
+    background: var(--main-color);
+}
+
+/* button normal 2 */
+
+.btn-hover.color-n2 {
+    background: var(--primary-color);
+}
