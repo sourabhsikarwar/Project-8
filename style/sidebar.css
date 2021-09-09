@@ -64,12 +64,12 @@ html, body{
 .sidebar{
     overflow-y: scroll !important;
     position: fixed;
-    width: 280px;
+    width: 300px;
     height: 100%;
     padding-bottom: 10%;
     top: 0;
     overflow: hidden;
-    right: -280px;
+    right: -300px;
     background: #f6f6f6;
     z-index: 999;
     transition: all 0.5s;
