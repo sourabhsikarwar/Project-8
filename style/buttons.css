@@ -75,3 +75,38 @@
 .btn-hover.color-n2 {
     background: var(--primary-color);
 }
+
+/* input button */
+
+#color-range-1,
+#color-range-2{
+    width: 102px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: .2rem .4rem .2rem 0;
+    height: 42px;
+    outline: none;
+    border: none !important;
+    -webkit-appearance: none !important;
+    border-radius: 6px !important;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+#color-range-1::-webkit-color-swatch,
+#color-range-2::-webkit-color-swatch{
+    border: none !important;
+    -webkit-appearance: none !important;
+    border-radius: 6px !important;
+}
+
+#color-range-1::-webkit-color-swatch{
+    background: var(--main-color) !important;
+}
+
+#color-range-2::-webkit-color-swatch{
+    background: var(--primary-color) !important;
+}
