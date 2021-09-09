@@ -57,7 +57,7 @@
             <li><button class="btn-hover shadow-sm color-2" id="colors" data-color-main="#1da1f5"
                     data-color-primary="#0051ff">Sky</button></li>
             <li><button class="btn-hover shadow-sm color-3" id="colors" data-color-main="#ff641c"
-                    data-color-primary="#f53b57">sunset</button></li>
+                    data-color-primary="#f53b57">Sunset</button></li>
             <li><button class="btn-hover shadow-sm color-4" id="colors" data-color-main="#0a7955"
                     data-color-primary="#06794f">Seafoam</button></li>
             <li><button class="btn-hover shadow-sm color-5" id="colors" data-color-main="#fa70b5"
@@ -65,9 +65,16 @@
         </ul>
 
         <ul>
-            <label for="list" class="list-label">Or choose your own colors...</label>
+            <label for="list" class="list-label">Your Colors</label>
             <li><button class="btn-hover bg-gradient shadow-sm color-n1">Main</button></li>
             <li><button class="btn-hover bg-gradient shadow-sm color-n2">Primary</button></li>
+        </ul>    
+            
+        <ul>
+            <label for="list" class="list-label">Or choose your own colors...</label>
+            <input type="color" name="color" id="color-range-1" value="#6800c7">
+            <input type="color" name="color" id="color-range-2" value="#0d6efd">
+            <input type="button" class="btn btn-primary bg-gradient py-2 px-3 my-2 mx-auto" id="color-button" value="change">
         </ul>
     </div>
 
@@ -498,9 +505,28 @@
         function theme() {
             let maincolor = this.getAttribute('data-color-main');
             document.documentElement.style.setProperty('--main-color', maincolor);
+            document.getElementById('color-range-1').value = "maincolor";
 
             let primarycolor = this.getAttribute('data-color-primary');
             document.documentElement.style.setProperty('--primary-color', primarycolor);
+            document.getElementById('color-range-2').value = "primarycolor";
+        }
+
+        // function changecolor(){
+        //     let color = document.getElementById('color-range').value;
+        //     // document.body.style.backgroundColor = color;
+        //     document.documentElement.style.setProperty('--primary-color', color);
+        // }
+
+        const colorbutton = document.getElementById("color-button");
+        colorbutton.addEventListener('click', colorchange);
+
+        function colorchange() {
+            let color1 = document.getElementById('color-range-1').value;
+            document.documentElement.style.setProperty('--main-color', color1);
+
+            let color2 = document.getElementById('color-range-2').value;
+            document.documentElement.style.setProperty('--primary-color', color2);
         }
     </script>
 
