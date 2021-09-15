@@ -1,14 +1,4 @@
-
-// sidebar js
-
 const openside = () => {
-    document.getElementById('opensidebar').style.right="0";
+    document.querySelector('.side-toggle').classList.toggle('active');
+    document.querySelector('.sidebar').classList.toggle('active');
 }
-const closesidebar = () => {
-    document.getElementById('opensidebar').style.right="-290px";
-}
-
-// input color
-
-
-
