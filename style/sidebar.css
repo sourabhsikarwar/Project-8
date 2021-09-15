@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-html, body{
+
+html,
+body {
     height: 100%;
     width: 100%;
     color: #333;
@@ -13,9 +14,10 @@ html, body{
     font-family: 'Poppins', sans-serif;
 }
 
+
 /* toggle-button */
 
-.side-toggle{
+.side-toggle {
     position: fixed;
     top: 100px;
     right: 0;
@@ -29,39 +31,35 @@ html, body{
     justify-content: center;
     align-items: center;
     z-index: 999;
+    transition: all 0.5s;
 }
 
-.side-toggle img{
+.side-toggle.active {
+    right: 288px;
+}
+
+.side-toggle img {
     margin: 10px;
 }
 
-/* close button */
-
-.closebtn{
-    position: absolute;
-    top: 15px;
-    right: 30px;
-    font-size: 28px;
-    transition: all 0.3s;
-}
-
-.sidebar a{
-    color:  rgb(141, 141, 141);
+.sidebar a {
+    color: rgb(141, 141, 141);
     text-decoration: none !important;
 }
 
-.sidebar .btn{
+.sidebar .btn {
     width: 215px;
 }
 
-.sidebar a:hover{
+.sidebar a:hover {
     color: #333;
     text-decoration: none !important;
 }
 
+
 /* main */
 
-.sidebar{
+.sidebar {
     overflow-y: scroll !important;
     position: fixed;
     width: 290px;
@@ -75,7 +73,11 @@ html, body{
     transition: all 0.5s;
 }
 
-.sidebar .side-head{
+.sidebar.active {
+    right: 0;
+}
+
+.sidebar .side-head {
     padding: 1.5rem 1.8rem;
     background: #fff;
     color: rgb(141, 141, 141);
@@ -84,16 +86,17 @@ html, body{
     font-weight: 600;
 }
 
-.sidebar ul{
+.sidebar ul {
     list-style-type: none;
-    
 }
 
-.sidebar ul li{
+.sidebar ul li {
     padding: 0 !important;
 }
 
-.sidebar dl, ol, ul {
+.sidebar dl,
+ol,
+ul {
     margin-bottom: 0 !important;
 }
 
@@ -101,7 +104,7 @@ html, body{
     padding-left: 1.8rem !important;
 }
 
-.sidebar .list-label{
+.sidebar .list-label {
     padding: 15px auto;
     margin: 18px auto 8px auto;
     color: rgb(112, 112, 112);
@@ -111,9 +114,10 @@ html, body{
     font-weight: 400;
 }
 
+
 /* color showcase */
 
-.sidebar .color-show{
+.sidebar .color-show {
     padding: .1rem 1.8rem;
     background: #fff;
     width: 100%;
